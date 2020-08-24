@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css"
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Issue1 from './Components/Pages/Issues/Issue1';
+import Issue2 from './Components/Pages/Issues/Issue2';
+import Issue3 from './Components/Pages/Issues/Issue3';
+import Issue4 from './Components/Pages/Issues/Issue4';
+import Issue5 from './Components/Pages/Issues/Issue5';
+import Issue6 from './Components/Pages/Issues/Issue6';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path='/Issue1' component={Issue1} />
+        <Route exact path='/Issue2' component={Issue2} />
+        <Route exact path='/Issue3' component={Issue3} />
+        <Route exact path='/Issue4' component={Issue4} />
+        <Route exact path='/Issue5' component={Issue5} />
+        <Route exact path='/Issue6' component={Issue6} />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
