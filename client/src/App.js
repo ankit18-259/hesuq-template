@@ -1,27 +1,35 @@
-import React from "react";
-import "./App.css"
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Issue1 from './Components/Pages/Issues/Issue1';
-import Issue2 from './Components/Pages/Issues/Issue2';
-import Issue3 from './Components/Pages/Issues/Issue3';
-import Issue4 from './Components/Pages/Issues/Issue4';
-import Issue5 from './Components/Pages/Issues/Issue5';
-import Issue6 from './Components/Pages/Issues/Issue6';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-const App = () => {
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { apiResponse: "" };
+    }
 
-  return (
-    <Router>
-      <Switch>
-        <Route exact path='/Issue1' component={Issue1} />
-        <Route exact path='/Issue2' component={Issue2} />
-        <Route exact path='/Issue3' component={Issue3} />
-        <Route exact path='/Issue4' component={Issue4} />
-        <Route exact path='/Issue5' component={Issue5} />
-        <Route exact path='/Issue6' component={Issue6} />
-      </Switch>
-    </Router>
-  );
-};
+    callAPI() {
+        fetch("http://localhost:9000/testAPI")
+            .then(res => res.text())
+            .then(res => this.setState({ apiResponse: res }))
+            .catch(err => err);
+    }
+
+    componentDidMount() {
+        this.callAPI();
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    <img src={logo} className="App-logo" alt="logo" />
+                    <h1 className="App-title">Welcome to React</h1>
+                </header>
+                <p className="App-intro">{this.state.apiResponse}</p>
+            </div>
+        );
+    }
+}
 
 export default App;
