@@ -1,4 +1,2 @@
-web: cd api
-     npm start
-     cd ../client
-     npm start
+web: sh -c 'cd ./api/ && npm start'
+web: sh -c 'cd ./client/ && npm start'
