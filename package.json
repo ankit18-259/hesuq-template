@@ -7,6 +7,10 @@
     "test": "nodemon server.js",
     "start": "node server.js"
   },
+  "dependencies": {
+    "express": "",
+    "path": ""
+  },
   "author": "Ankit Sharma",
   "license": "ISC"
 }
