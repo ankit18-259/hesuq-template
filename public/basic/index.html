@@ -6,27 +6,80 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="basic/css/index.css">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <style>
+            .main-logo {
+                width: 40%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .container-fluid {
+                padding-top: 70px;
+                padding-bottom: 70px;
+                margin-right: 80px;
+                margin-left: 80px;
+            }
+            .bg-1 {
+                background-color: #ffffff;
+                color: #242424;
+            }
+            .navbar {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: 0;
+                border-radius: 0;
+                margin-bottom: 0;
+                font-size: 12px;
+                letter-spacing: 5px;
+                font-family: spartanMBregular;
+                font-style: normal;
+                color: #242424;
+            }
+            .navbar-nav  li a:hover {
+                color: #1abc9c !important;
+            }
+            .img-nav {
+                width: 65px;
+            }
+        </style>
     </head>
     <body>
-        <nav class = "navbar navbar-default">
-            <div class = "container-fluid">
-                <a class="navbar-brand" href="#">HESUQ</a>
-                <ul class= "nav navbar-nav">
-                    <li class= "active"><a href= "/">Home</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            Issues
-                        <span class="caret"></span></a>
-                        <ul id="menu" class="dropdown-menu">
-                        </ul>
-                    </li>
-                    <li><a href="/aboutus">About Us</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span>                       
+                    </button>
+                    <img class="img-nav" src="../resources/LOGO_FINAL.png">
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="/">HOME</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                MAGAZINE
+                            <span class="caret"></span></a>
+                            <ul id="menu" class="dropdown-menu">
+                            </ul>
+                        </li>
+                        <li><i class="material-icons" style="font-size:48px">menu</i></li>
+                    </ul>
+                </div>
             </div>
         </nav>
+        <div class= "container-fluid bg-1">
+            <div class="col-sm-12">
+                <img class ="main-logo" src="../resources/HESUQ.png">
+            </div>
+        </div>
+
+
         <script src="basic/js/JSinsertIssue.js"></script>
     </body>
-</html>
+</html>    
