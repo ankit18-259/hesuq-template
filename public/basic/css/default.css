@@ -1,0 +1,56 @@
+.def-font {
+    font-family: spartanMBregular;
+    font-style: normal;
+    font-size: 20px;
+    color: #242424;
+}
+.main-logo {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-fluid-1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.container-fluid-2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.container-fluid-3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.bg-1 {
+    background-color: #ffffff;
+    color: #242424;
+}
+.bg-2 {
+    background-color: #ffffff;
+    color: #242424;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-family: spartanMBregular;
+    font-style: normal;
+    color: #242424;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+.img-nav {
+    width: 65px;
+}
