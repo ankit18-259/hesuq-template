@@ -36,22 +36,37 @@
     background-color: #ffffff;
     color: #242424;
 }
-.navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-    font-family: spartanMBregular;
-    font-style: normal;
-    margin-right: 5%;
+
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
     margin-left: 5%;
+    margin-right: 5%;
 }
-.navbar-nav  li a:hover {
-    color: #1abc9c !important;
+.topnav img {
+    width: 60px;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px; 
 }
-.img-nav {
-    width: 65px;
+  
+.topnav a {
+    float: right;
+    display: block;
+    color: #242424;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
 }

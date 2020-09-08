@@ -25,7 +25,7 @@ document.getElementById('menu').appendChild(createMenuItem('Issue 8', '/issue8/1
 
 //general hacks onload starts
 
-document.getElementById("hamburgerIcon").style.cursor = "pointer";
+
 
 //general hacks onload ends
 

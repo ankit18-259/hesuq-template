@@ -7,31 +7,19 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="basic/css/default.css">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <img class="img-nav" src="../resources/LOGO_FINAL.png">
-                </div>
-                <div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="/">HOME</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                MAGAZINE
-                            <span class="caret"></span></a>
-                            <ul id="menu" class="dropdown-menu">
-                            </ul>
-                        </li>
-                        <li><i id="hamburgerIcon"class="material-icons" style="font-size:48px" onclick="floaterLoad()">menu</i></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="topnav" id="MyTopNav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <img src="../resources/LOGO_FINAL.png">
+            <a href="/subscribe">SUBSCRIBE</a>
+            <a href="/">HOME</a>
+        </div>
         <div class= "container-fluid container-fluid-1 bg-1" style="border-top: 3px solid #242424; border-bottom: 3px solid #242424;">
             <div class="col-sm-12">
                 <img class ="main-logo" src="../resources/HESUQ.png">
