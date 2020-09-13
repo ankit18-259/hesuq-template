@@ -1,18 +1,29 @@
+@font-face {
+    font-family: "Voga-Regular";
+    src: url("fonts/Voga\ Regular.ttf");
+    }
+@font-face {
+    font-family: "Playfair-Display";
+    src: url("fonts/Playfair-Display.ttf");
+    }
+.head-font {
+    font-family: Voga-Regular;
+    font-size: 180px;
+    color: #242424;
+    letter-spacing: 20px;
+    line-height: 180px;
+}
 .def-font {
-    font-family: spartanMBregular;
+    font-family: Playfair-Display;
     font-style: normal;
     font-size: 20px;
     color: #242424;
 }
-.main-logo {
-    width: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.nav-font{
+    font-family: SpartanMB;
 }
 .container-fluid-1{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 0px;
     margin-right: 5%;
     margin-left: 5%;
 }
@@ -29,28 +40,27 @@
     margin-left: 5%;
 }
 .bg-1 {
-    background-color: #FBEFE3;
+    background-color: #ffffff;
     color: #242424;
 }
 .bg-2 {
     background-color: #FBEFE3;
     color: #242424;
 }
-
 .topnav {
+    padding-top: 80px;
     overflow: hidden;
     background-color: #ffffff;
     margin-left: 5%;
     margin-right: 5%;
 }
 .topnav img {
-    width: 60px;
+    width: 100px;
     float: left;
-    padding-top: 10px;
-    padding-left: 10px;
     padding-bottom: 10px; 
-}
-  
+    position: relative;
+    top: -40px;
+}  
 .topnav a {
     float: right;
     display: block;
@@ -59,14 +69,27 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-}
-  
+}  
 .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    color: #000000;
 }
-  
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
+}
+.subnav {
+    text-align:justify
+}
+.subnav a {
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #242424;
+}
+.subnav a:hover {
+    background-color: #ddd;
+    color: #000000;
 }
